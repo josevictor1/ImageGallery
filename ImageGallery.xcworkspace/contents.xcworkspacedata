@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:App"
+      name = "App">
+      <FileRef
+         location = "group:ImageGalley/ImageGallery.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:In-House Frameworks"
+      name = "In-House Frameworks">
+      <FileRef
+         location = "group:Commons/Commons.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Core/Core.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:UIComponents/UIComponents.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Networking/Networking.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
