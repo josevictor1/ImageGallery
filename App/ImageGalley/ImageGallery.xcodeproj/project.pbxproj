@@ -22,6 +22,10 @@
 		1A74227B248C4E6D00F4CD42 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A742274248C4E6D00F4CD42 /* UIComponents.framework */; };
 		1A74227C248C4E6D00F4CD42 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A742274248C4E6D00F4CD42 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1A742287248C674E00F4CD42 /* LauchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A742286248C674E00F4CD42 /* LauchScreen.storyboard */; };
+		1A74228C248C6B7700F4CD42 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A74228B248C6B7700F4CD42 /* MainCoordinator.swift */; };
+		1A742291248C7F6700F4CD42 /* ImageGalleryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A742290248C7F6700F4CD42 /* ImageGalleryCoordinator.swift */; };
+		1A742293248C84C300F4CD42 /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A742292248C84C300F4CD42 /* Localized.strings */; };
+		1A742296248C858E00F4CD42 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A742295248C858E00F4CD42 /* LocalizedStrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,10 @@
 		1A742274248C4E6D00F4CD42 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A742286248C674E00F4CD42 /* LauchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LauchScreen.storyboard; sourceTree = "<group>"; };
 		1A742288248C683A00F4CD42 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A74228B248C6B7700F4CD42 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		1A742290248C7F6700F4CD42 /* ImageGalleryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryCoordinator.swift; sourceTree = "<group>"; };
+		1A742292248C84C300F4CD42 /* Localized.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localized.strings; sourceTree = "<group>"; };
+		1A742295248C858E00F4CD42 /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,8 @@
 		1A74223F248C470600F4CD42 /* ImageGallery */ = {
 			isa = PBXGroup;
 			children = (
+				1A742294248C853C00F4CD42 /* Assets */,
+				1A74228A248C6B5100F4CD42 /* Coodinator */,
 				1A742280248C64E600F4CD42 /* App Delegate */,
 				1A74227F248C64D900F4CD42 /* Scenes */,
 				1A74227E248C64C300F4CD42 /* Supporting Files */,
@@ -171,8 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				1A742288248C683A00F4CD42 /* Info.plist */,
-				1A742249248C470A00F4CD42 /* Assets.xcassets */,
 				1A742286248C674E00F4CD42 /* LauchScreen.storyboard */,
+				1A742292248C84C300F4CD42 /* Localized.strings */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -180,7 +190,7 @@
 		1A74227F248C64D900F4CD42 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				1A742244248C470600F4CD42 /* ViewController.swift */,
+				1A74228D248C7E3500F4CD42 /* Image Gallery */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -192,6 +202,48 @@
 				1A742242248C470600F4CD42 /* SceneDelegate.swift */,
 			);
 			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		1A74228A248C6B5100F4CD42 /* Coodinator */ = {
+			isa = PBXGroup;
+			children = (
+				1A74228B248C6B7700F4CD42 /* MainCoordinator.swift */,
+			);
+			path = Coodinator;
+			sourceTree = "<group>";
+		};
+		1A74228D248C7E3500F4CD42 /* Image Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				1A74228F248C7EFF00F4CD42 /* Coordinator */,
+				1A74228E248C7EE500F4CD42 /* View Controller */,
+			);
+			path = "Image Gallery";
+			sourceTree = "<group>";
+		};
+		1A74228E248C7EE500F4CD42 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A742244248C470600F4CD42 /* ViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		1A74228F248C7EFF00F4CD42 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1A742290248C7F6700F4CD42 /* ImageGalleryCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1A742294248C853C00F4CD42 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1A742249248C470A00F4CD42 /* Assets.xcassets */,
+				1A742295248C858E00F4CD42 /* LocalizedStrings.swift */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A742293248C84C300F4CD42 /* Localized.strings in Resources */,
 				1A742287248C674E00F4CD42 /* LauchScreen.storyboard in Resources */,
 				1A74224A248C470A00F4CD42 /* Assets.xcassets in Resources */,
 			);
@@ -327,7 +380,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A742245248C470600F4CD42 /* ViewController.swift in Sources */,
+				1A742291248C7F6700F4CD42 /* ImageGalleryCoordinator.swift in Sources */,
+				1A74228C248C6B7700F4CD42 /* MainCoordinator.swift in Sources */,
 				1A742241248C470600F4CD42 /* AppDelegate.swift in Sources */,
+				1A742296248C858E00F4CD42 /* LocalizedStrings.swift in Sources */,
 				1A742243248C470600F4CD42 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
