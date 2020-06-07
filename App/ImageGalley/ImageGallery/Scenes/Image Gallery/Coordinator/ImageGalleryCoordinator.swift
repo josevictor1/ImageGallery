@@ -26,6 +26,7 @@ class ImageGalleryCoordinator: NavigationCoordinator {
     }
     
     private func navigateToImageGallery() {
-
+        let viewController: ImageGalleryViewController = .makeImageGallery()
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

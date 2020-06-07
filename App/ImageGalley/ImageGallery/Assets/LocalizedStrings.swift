@@ -7,7 +7,13 @@
 //
 
 import Foundation
+import Commons
 
 enum LocalizedStrings: String {
+    
     case imageGalleryTitle
+    
+    var localized: String {
+        self.rawValue.localized()
+    }
 }
